@@ -11,8 +11,7 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="site-header">
+    <header class="site-header pt-4 pb-3">
         <div class="container">
             <nav class="main-nav">
                 <a class="brand-logo" href="index.html">Swag Vynil</a>
@@ -34,16 +33,12 @@
         </div>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
     <main class="container py-4">
-        <!-- BREADCRUMBS -->
         <nav class="breadcrumb-nav mb-4">
             <a href="inicio.html">Home</a> &gt; <a href="productos.html">Pop</a> &gt; <span>Taylor Swift - 1989</span>
         </nav>
-
-        <!-- SECCIÓN DETALLE DEL PRODUCTO -->
         <section class="product-detail-wrapper">
-            <!-- Galería de Imágenes (Izquierda) -->
+
             <div class="product-gallery">
                 <div class="main-image-container">
                     <img id="main-product-img" src="images/TAYLOR1.webp" alt="Taylor Swift - 1989">
@@ -55,37 +50,36 @@
                 </div>
             </div>
 
-            <!-- Información del Producto (Derecha) -->
-            <div class="product-header">
-                <h1 class="detail-title" id="detail-title">Taylor Swift - 1989</h1>
-                <span class="detail-price" id="detail-price">$25.990</span>
-            </div>
-            <p class="detail-description" id="detail-description">
-                Este álbum icónico incluye grandes éxitos remasterizados en formato vinilo de alta fidelidad.
-                Ideal para coleccionistas y fanáticos de la música pop. Cuenta con un diseño exclusivo de carátula
-                y prensado de alta calidad para garantizar la mejor experiencia de sonido.
-            </p>
-
-            <div class="purchase-actions">
-                <div class="quantity-selector">
-                    <label for="cantidad">Cantidad</label>
-                    <select id="cantidad" name="cantidad">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+            <div class="product-info-panel">
+                <div class="product-header">
+                    <h1 class="detail-title" id="detail-title">Taylor Swift - 1989</h1>
+                    <span class="detail-price" id="detail-price">$25.990</span>
                 </div>
+                <p class="detail-description" id="detail-description">
+                    Este álbum icónico incluye grandes éxitos remasterizados en formato vinilo de alta fidelidad.
+                    Ideal para coleccionistas y fanáticos de la música pop. Cuenta con un diseño exclusivo de carátula
+                    y prensado de alta calidad para garantizar la mejor experiencia de sonido.
+                </p>
 
-                <button type="button" class="btn-add-cart-detail">Añadir al carrito</button>
-            </div>
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <label for="cantidad">Cantidad</label>
+                        <select id="cantidad" name="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn-add-cart-detail">Añadir al carrito</button>
+                </div>
             </div>
         </section>
 
         <hr class="my-5">
 
-        <!-- PRODUCTOS RELACIONADOS -->
         <section class="related-products-section">
             <h3 class="mb-4">Productos Relacionados</h3>
             <div class="productos-grid">
@@ -124,7 +118,6 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container footer-content">
             <div class="footer-left">

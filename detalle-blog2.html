@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso Curioso #2 - Swag Vynil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <header class="site-header pt-4 pb-3">
+        <div class="container">
+            <nav class="main-nav">
+                <a class="brand-logo" href="index.html">Swag Vynil</a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blog.html" class="active">Blogs</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <a href="carrito.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+            </nav>
+
+            <div class="auth-bar">
+                <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrar usuario</a>
+            </div>
+        </div>
+    </header>
+
+<main class="container py-5">
+    <nav class="breadcrumb-nav mb-4">
+        <a href="blog.html">← Volver a Blogs</a>
+    </nav>
+
+    <article class="blog-detail-wrapper mx-auto" style="max-width: 900px;">
+        <h1 class="fw-bold mb-3">CASO CURIOSO #2: ¿Por qué los vinilos son originalmente transparentes?</h1>
+        <p class="text-muted mb-4">Publicado el 5 de Septiembre, 2026 | Por Equipo Swag Vynil</p>
+
+        <div class="row align-items-center g-4">
+            <div class="col-md-7">
+                <div class="blog-content leading-relaxed">
+                    <p class="lead">
+                        Aunque asociamos inmediatamente los discos de vinilo con un color negro brillante, el policloruro de vinilo (PVC) utilizado para su fabricación es en realidad transparente por naturaleza.
+                    </p>
+                    <p>
+                        El característico color negro proviene de un aditivo llamado <strong>negro de carbón</strong>. Los fabricantes comenzaron a añadir este pigmento para fortalecer la resistencia estructural del plástico, reducir la estática que atrae el polvo y garantizar que los micro-surcos duren cientos de reproducciones sin deformarse.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-5 text-center">
+                <div class="blog-img-wrapper border rounded overflow-hidden shadow-sm bg-light">
+                    <img src="images/vinilotransparente.jpg" 
+                         alt="Caso Curioso 2" 
+                         class="img-fluid w-100 d-block" 
+                         style="height: 300px; object-fit: cover;" 
+                         onerror="this.onerror=null; this.src='https://picsum.photos/id/145/400/300';">
+                </div>
+            </div>
+        </div>
+    </article>
+</main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">Swag Vynil</span>
+            </div>
+            <div class="footer-newsletter">
+                <span>¡Mantente al tanto! Únete a nuestro newsletter</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

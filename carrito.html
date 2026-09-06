@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="site-header">
+    <header class="site-header pt-4 pb-3">
         <div class="container">
             <nav class="main-nav">
                 <a class="brand-logo" href="index.html">Swag Vynil</a>
@@ -36,25 +36,30 @@
     <main class="container py-4">
         <h1 class="page-title mb-4">Mi carrito de compras</h1>
 
-
-            <section class="cart-items-list" id="cart-items-container">
+        <div class="row g-4">
+            <section class="col-lg-8" id="cart-items-container">
             </section>
-            <aside class="cart-summary-panel">
-                <div class="summary-total">
-                    <span>TOTAL:</span>
-                    <strong id="cart-total">$0</strong>
+
+
+            <aside class="col-lg-4">
+                <div class="cart-summary-panel border p-4 rounded bg-light">
+                    <div class="summary-total d-flex justify-content-between align-items-center mb-3">
+                        <span class="fw-bold fs-5">TOTAL:</span>
+                        <strong id="cart-total" class="fs-4 text-primary">$0</strong>
+                    </div>
+
+                    <form class="coupon-form mb-3" id="coupon-form">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Cupón de descuento" id="coupon-input">
+                            <button class="btn btn-outline-secondary" type="button" id="btn-coupon">APLICAR</button>
+                        </div>
+                    </form>
+
+                    <button class="btn btn-dark w-100 py-2 fw-bold" id="btn-pay">PAGAR</button>
                 </div>
-
-                <form class="coupon-form" id="coupon-form">
-                    <input type="text" placeholder="Ingrese el cupón de descuento" id="coupon-input">
-                    <button type="button" id="btn-coupon">APLICAR</button>
-                </form>
-
-                <button class="btn-pay" id="btn-pay">PAGAR</button>
             </aside>
         </div>
     </main>
-
 
     <footer class="site-footer">
         <div class="container footer-content">
