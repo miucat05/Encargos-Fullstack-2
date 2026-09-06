@@ -589,3 +589,31 @@ a {
         align-items: flex-start;
     }
 }
+/* Estilo del contenedor del logo y título */
+.brand-logo, .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+/* Control de tamaño del logo */
+.logo-img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Mantiene el color blanco en el Admin */
+.brand-logo-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Mantiene el color oscuro en la Tienda */
+.brand-logo-text-store {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
