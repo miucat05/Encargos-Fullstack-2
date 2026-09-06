@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swag Vynil - Administrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <a class="brand-logo" href="admin-home.html">Swag Vynil <span>Admin</span> </a>
+            <nav>
+                <ul>
+                    <li><a href="admin-home.html" class="active">Dashboard</a></li>
+                    <li><a href="admin-productos.html">Productos</a></li>
+                    <li><a href="admin-usuarios.html">Usuarios</a></li>
+                </ul>
+            </nav>
+            <a class="volver-tienda" href="/index.html">&larr; Volver a la tienda</a>
+        </aside>
+
+        <main class="admin-content">
+            <header class="admin-topbar">
+                <h1>Hola administrador!</h1>
+            </header>
+
+            <section class="admin-cards">
+                <article class="admin-cards">
+                    <h2 id="total-productos">0</h2>
+                    <p>Productos publicados</p>
+                </article>
+                <article class="admin-card">
+                    <h2 id="total-usuarios">0</h2>
+                    <p>Usuarios registrados</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="/js/productos-data.js"></script>
+    <script src="/js/usuarios-data.js"></script>
+    <script>
+        document.getElementById("total-productos").textContent = productos.length;
+        document.getElementById("total-usuarios").textContent = usuarios.length;
+    </script>
+</body>
+</html>

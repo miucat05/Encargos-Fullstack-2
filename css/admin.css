@@ -1,0 +1,141 @@
+:root {
+    --primary: #687acc;
+    --primary-dark: #4f5fb0;
+    --primary-soft: #e4e8fa;
+    --bg: #f8f9fd;
+    --card-bg: #ffffff;
+    --text-dark: #333a4d;
+    --text-muted: #6f7488;
+    --danger: #d64545;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg);
+}
+
+a { text-decoration: none; }
+
+.admin-layout { display: flex; min-height: 100vh; }
+
+.admin-sidebar {
+    width: 230px;
+    background-color: var(--primary-dark);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.admin-sidebar .brand-logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-sidebar .brand-logo span {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.admin-sidebar nav { flex: 1; }
+.admin-sidebar ul { list-style: none; margin: 0; padding: 10px 0; }
+.admin-sidebar a { display: block; color: white; padding: 12px 20px; }
+.admin-sidebar a:hover,
+.admin-sidebar a.active { background-color: var(--primary); }
+
+.admin-sidebar .volver-tienda {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.85;
+}
+
+.admin-content { flex: 1; padding: 30px 40px; }
+
+.admin-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-nuevo {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+.btn-nuevo:hover { background-color: var(--primary-dark); }
+
+.admin-cards { display: flex; gap: 20px; }
+.admin-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+.admin-card h2 { font-size: 2rem; color: var(--primary-dark); margin: 0; }
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.admin-table th, .admin-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--primary-soft);
+}
+.admin-table th { background-color: var(--primary-soft); color: var(--text-dark); }
+.admin-table img { width: 50px; height: 50px; object-fit: cover; border-radius: 4px; }
+
+.admin-table .btn-editar, .admin-table .btn-eliminar {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+.admin-table .btn-editar { background-color: var(--primary); color: white; }
+.admin-table .btn-eliminar { background-color: var(--danger); color: white; }
+
+.admin-form {
+    max-width: 500px;
+    background: var(--card-bg);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+.admin-form .campo { margin-bottom: 16px; display: flex; flex-direction: column; }
+.admin-form label { margin-bottom: 6px; font-weight: bold; font-size: 0.9rem; }
+.admin-form input, .admin-form select, .admin-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+.admin-form textarea { resize: vertical; min-height: 80px; }
+.admin-form .error { color: var(--danger); font-size: 0.8rem; min-height: 16px; }
+
+.btn-guardar {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn-guardar:hover { background-color: var(--primary-dark); }

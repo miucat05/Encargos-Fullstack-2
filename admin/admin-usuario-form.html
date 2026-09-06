@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swag Vynil - Nuevo/Editar usuario (Admin)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="admin-layout">
+        <aside class="admin-sidebar">
+            <a class="brand-logo" href="admin-home.html">Swag Vynil <span>Admin</span></a>
+            <nav>
+                <ul>
+                    <li><a href="admin-home.html">Dashboard</a></li>
+                    <li><a href="admin-productos.html">Productos</a></li>
+                    <li><a href="admin-usuarios.html" class="active">Usuarios</a></li>
+                </ul>
+            </nav>
+            <a class="volver-tienda" href="../index.html">&larr; Volver a la tienda</a>
+        </aside>
+
+        <main class="admin-content">
+            <header class="admin-topbar">
+                <h1 id="titulo-form">Nuevo usuario</h1>
+            </header>
+
+            <form id="form-usuario" class="admin-form" novalidate>
+                <div class="campo">
+                    <label for="run">RUN (sin puntos ni guion)</label>
+                    <input type="text" id="run" required minlength="7" maxlength="9" placeholder="19011022K">
+                    <small class="error" id="error-run"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required maxlength="50">
+                    <small class="error" id="error-nombre"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" required maxlength="100">
+                    <small class="error" id="error-apellidos"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" required maxlength="100">
+                    <small class="error" id="error-correo"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="fechaNacimiento">Fecha de nacimiento (opcional)</label>
+                    <input type="date" id="fechaNacimiento">
+                </div>
+
+                <div class="campo">
+                    <label for="tipoUsuario">Tipo de usuario</label>
+                    <select id="tipoUsuario" required>
+                        <option value="">-- Seleccione --</option>
+                        <option value="Administrador">Administrador</option>
+                        <option value="Vendedor">Vendedor</option>
+                        <option value="Cliente">Cliente</option>
+                    </select>
+                    <small class="error" id="error-tipoUsuario"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="region">Región</label>
+                    <select id="region" required>
+                        <option value="">-- Seleccione la región --</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="comuna">Comuna</label>
+                    <select id="comuna" required>
+                        <option value="">-- Seleccione la comuna --</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" required maxlength="300">
+                    <small class="error" id="error-direccion"></small>
+                </div>
+
+                <button type="submit" class="btn-guardar">Guardar</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="/js/usuarios-data.js"></script>
+    <script src="/js/validaciones-admin.js"></script>
+    <script src="/js/admin-usuarios.js"></script>
+</body>
+</html>
