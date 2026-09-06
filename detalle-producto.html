@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto - Swag Vynil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a class="brand-logo" href="index.html">Swag Vynil</a>
+                
+                <ul class="nav-links">
+                    <li><a href="inicio.html">Home</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <a href="carrito.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+            </nav>
+
+            <div class="auth-bar">
+                <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrar usuario</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-4">
+        <!-- BREADCRUMBS -->
+        <nav class="breadcrumb-nav mb-4">
+            <a href="inicio.html">Home</a> &gt; <a href="productos.html">Pop</a> &gt; <span>Taylor Swift - 1989</span>
+        </nav>
+
+        <!-- SECCIÓN DETALLE DEL PRODUCTO -->
+        <section class="product-detail-wrapper">
+            <!-- Galería de Imágenes (Izquierda) -->
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img id="main-product-img" src="images/TAYLOR1.webp" alt="Taylor Swift - 1989">
+                </div>
+                <div class="thumbnails-grid">
+                    <img src="images/TAYLOR1.webp" class="thumbnail active" alt="Vista 1">
+                    <img src="images/taylor 2.webp" class="thumbnail" alt="Vista 2">
+                    <img src="images/taylor3.webp" class="thumbnail" alt="Vista 3">
+                </div>
+            </div>
+
+            <!-- Información del Producto (Derecha) -->
+            <div class="product-info-panel">
+                <div class="product-header">
+                    <h1 class="detail-title">Taylor Swift - 1989</h1>
+                    <span class="detail-price">$25.990</span>
+                </div>
+
+                <p class="detail-description">
+                    Este álbum icónico incluye grandes éxitos remasterizados en formato vinilo de alta fidelidad.
+                    Ideal para coleccionistas y fanáticos de la música pop. Cuenta con un diseño exclusivo de carátula
+                    y prensado de alta calidad para garantizar la mejor experiencia de sonido.
+                </p>
+
+                <div class="purchase-actions">
+                    <div class="quantity-selector">
+                        <label for="cantidad">Cantidad</label>
+                        <select id="cantidad" name="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn-add-cart-detail">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- PRODUCTOS RELACIONADOS -->
+        <section class="related-products-section">
+            <h3 class="mb-4">Productos Relacionados</h3>
+            <div class="productos-grid">
+                <article class="product-card">
+                    <a href="detalle-producto.html">
+                        <img src="images/taylor 2.webp" alt="Taylor Swift - Red">
+                    </a>
+                    <a href="detalle-producto.html" class="product-title">Taylor Swift - Red (TV)</a>
+                    <p class="product-price">$25.990</p>
+                </article>
+
+                <article class="product-card">
+                    <a href="detalle-producto.html">
+                        <img src="images/taylor3.webp" alt="Taylor Swift - Midnights">
+                    </a>
+                    <a href="detalle-producto.html" class="product-title">Taylor Swift - Midnights</a>
+                    <p class="product-price">$25.990</p>
+                </article>
+
+                <article class="product-card">
+                    <a href="detalle-producto.html">
+                        <img src="images/tayy1.webp" alt="Taylor Swift - Evermore">
+                    </a>
+                    <a href="detalle-producto.html" class="product-title">Taylor Swift - Evermore</a>
+                    <p class="product-price">$25.990</p>
+                </article>
+
+                <article class="product-card">
+                    <a href="detalle-producto.html">
+                        <img src="images/taylor6.webp" alt="Taylor Swift - Folklore">
+                    </a>
+                    <a href="detalle-producto.html" class="product-title">Taylor Swift - Folklore</a>
+                    <p class="product-price">$25.990</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">Swag Vynil</span>
+                <ul class="footer-categories">
+                    <li><a href="#">Pop</a></li>
+                    <li><a href="#">Rock</a></li>
+                    <li><a href="#">Urbano</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <span>¡Mantente al tanto! Únete a nuestro newsletter</span>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
