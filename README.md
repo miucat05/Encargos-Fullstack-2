@@ -16,7 +16,7 @@ Aplicación web e-commerce enfocada en la venta de discos de vinilo, desarrollad
 * **Carrito de Compras:** Gestión persistente de productos añadidos mediante `localStorage`.
 * **Formulario de Contacto:** Validaciones en tiempo real para datos de usuario (`js/contacto.js`).
 
-### ⚙️ Panel de Administración (Admin)
+### Panel de Administración (Admin)
 * **Dashboard Global:** Métricas y contadores dinámicos de productos publicados y usuarios registrados.
 * **Gestión de Productos (CRUD):** Interfaz para listar, crear, editar y eliminar vinilos.
 * **Gestión de Usuarios (CRUD):** Mantenedor para administrar cuentas, roles y direcciones.
