@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Swag Vynil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a class="brand-logo" href="index.html">Swag Vynil</a>
+                
+                <ul class="nav-links">
+                    <li><a href="inicio.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="index.html" class="active">Nosotros</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+
+                <a href="carrito.html" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+            </nav>
+
+            <div class="auth-bar">
+                <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrar usuario</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container py-5">
+        <section class="about-company-section mb-5">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <h1 class="page-title mb-3">Sobre Swag Vynil</h1>
+                    <p class="lead text-muted">Apasionados por la música analógica y la cultura del vinilo.</p>
+                    <p>
+                        Nacimos con el propósito de conectar a los amantes de la música con ediciones exclusivas, clásicos memorables y los lanzamientos más recientes del mercado musical en formato físico. Nos enfocamos en brindar una experiencia de compra transparente, con un catálogo curado detalladamente para audiófilos y coleccionistas.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h5>Misión</h5>
+                            <p class="small text-muted">Ofrecer vinilos de alta fidelidad garantizando calidad, autenticidad y excelente servicio al cliente.</p>
+                        </div>
+                        <div class="col-6">
+                            <h5>Visión</h5>
+                            <p class="small text-muted">Convertirnos en la tienda de vinilos de referencia nacional para melómanos y nuevos coleccionistas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-img-wrapper">
+                        <img src="images/storee.jpg" alt="Tienda Swag Vynil" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <section class="developers-section">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Equipo de Desarrollo</h2>
+                <p class="text-muted">Estudiantes detrás del diseño e implementación de este proyecto.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Ijvierrr-->
+                <div class="col-md-4">
+                    <div class="developer-card text-center p-4">
+                        <div class="dev-avatar mb-3">
+                            <img src="images/mcloving.jpg" alt="Desarrollador 1" class="rounded-circle">
+                        </div>
+                        <h4>Javier Romero V.</h4>
+                        <p class="text-muted mb-2">Desarrollador Frontend</p>
+                        <p class="small text-muted">Estudiante de Ing. Informática. Encargado de maquetación HTML, CSS y estructura de vistas públicas.</p>
+                    </div>
+                </div>
+
+                <!-- Cataaa yoyoyo-->
+                <div class="col-md-4">
+                    <div class="developer-card text-center p-4">
+                        <div class="dev-avatar mb-3">
+                            <img src="images/mclova.jpg" alt="Desarrollador 2" class="rounded-circle">
+                        </div>
+                        <h4>Catalina Campos C.</h4>
+                        <p class="text-muted mb-2">Desarrollador JavaScript</p>
+                        <p class="small text-muted">Estudiante de Ing. Informática. Encargado de validaciones de formularios y lógica del carrito en LocalStorage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-logo">Swag Vynil</span>
+                <ul class="footer-categories">
+                    <li><a href="#">Pop</a></li>
+                    <li><a href="#">Rock</a></li>
+                    <li><a href="#">Urbano</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <span>¡Mantente al tanto! Únete a nuestro newsletter</span>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
