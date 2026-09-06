@@ -47,103 +47,7 @@
         <section id="productos" class="products-section">
             <h2>Productos disponibles</h2>
             
-            <div class="productos-grid">
-                <article class="product-card">
-                    <img src="images/TAYLOR1.webp" alt="Taylor Swift - 1989">
-                    <a href="detalle-producto.html?id=1" class="product-title">Taylor Swift - 1989</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/taylor 2.webp" alt="Taylor Swift - Red">
-                    <a href="detalle-producto.html?id=2" class="product-title">Taylor Swift - Red (TV)</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/taylor3.webp" alt="Taylor Swift - Midnights">
-                    <a href="detalle-producto.html?id=3" class="product-title">Taylor Swift - Midnights</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/tayy1.webp" alt="Taylor Swift - Evermore">
-                    <a href="detalle-producto.html?id=4" class="product-title">Taylor Swift - Evermore</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/taylor5.webp" alt="Taylor Swift - The Life of a Showgirl">
-                    <a href="detalle-producto.html?id=5" class="product-title">Taylor Swift - Showgirl</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/taylor6.webp" alt="Taylor Swift - Folklore">
-                    <a href="detalle-producto.html?id=6" class="product-title">Taylor Swift - Folklore</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/FFE9DFB9-862F-4B67-9F3A-658A4D0C8E20.webp" alt="Justin Bieber - Changes">
-                    <a href="detalle-producto.html?id=7" class="product-title">Justin Bieber - Changes</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/swag.webp" alt="Justin Bieber - Swag">
-                    <a href="detalle-producto.html?id=8" class="product-title">Justin Bieber - Swag</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/purpose.webp" alt="Justin Bieber - Purpose">
-                    <a href="detalle-producto.html?id=9" class="product-title">Justin Bieber - Purpose</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/myworld.webp" alt="Justin Bieber - My World">
-                    <a href="detalle-producto.html?id=10" class="product-title">Justin Bieber - My World</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/justice.webp" alt="Justin Bieber - Justice">
-                    <a href="detalle-producto.html?id=11" class="product-title">Justin Bieber - Justice</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-
-                <article class="product-card">
-                    <img src="images/believe.webp" alt="Justin Bieber - Believe">
-                    <a href="detalle-producto.html?id=12" class="product-title">Justin Bieber - Believe</a>
-                    <span class="product-subtitle">Edición Vinilo</span>
-                    <p class="product-price">$25.990</p>
-                    <button type="button" class="btn-add-cart">Añadir</button>
-                </article>
-            </div>
+            <div class="productos-grid" id="productos-grid"></div>
         </section>
     </main>
 
@@ -169,6 +73,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/productos-data.js"></script>
+    <script src="js/render-productos.js"></script>
     <script src="js/cart.js"></script>
 </body>
 
