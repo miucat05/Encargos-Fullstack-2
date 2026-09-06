@@ -78,3 +78,11 @@ header {
 .footer-default hr {
     border-color: #4a5687;
 }
+
+.invalid-feedback {
+    display: block;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
