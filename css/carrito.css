@@ -1,0 +1,94 @@
+/* Tabla de Productos */
+.cart-table {
+    vertical-align: middle;
+}
+
+.cart-table th {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6c757d;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.cart-item-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+    margin: 0;
+}
+
+/* Selector de Cantidad */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    max-width: 110px;
+}
+
+.quantity-control .btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.quantity-control input {
+    height: 32px;
+    font-weight: 600;
+}
+
+/* Botón Eliminar */
+.btn-remove {
+    color: #dc3545;
+    background: transparent;
+    border: none;
+    transition: color 0.2s ease;
+}
+
+.btn-remove:hover {
+    color: #a71d2a;
+}
+
+/* Tarjeta de Resumen de Pedido */
+.cart-summary-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.summary-total {
+    border-top: 2px dashed #dee2e6;
+    padding-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Vista de Carrito Vacío */
+.empty-cart-wrapper {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.empty-cart-icon {
+    font-size: 4rem;
+    color: #adb5bd;
+    margin-bottom: 1rem;
+}
