@@ -43,6 +43,7 @@ Aplicación web e-commerce enfocada en la venta de discos de vinilo, desarrollad
 ├── css/
 │   ├── main.css                  # Estilos generales de la tienda
 │   └── admin.css                 # Estilos específicos del panel de administración
+|   |__... demás css
 ├── images/
 │   └── logoswag.png              # Logo oficial
 ├── js/
