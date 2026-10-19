@@ -1,5 +1,5 @@
 # Encargos-Fullstack-2
-Repositorio creado por Catalina Campos y Javier Romero, como método de entregas de nuestra evaluación 1.
+Repositorio creado por Catalina Campos, Javier Romero y Antonella Acevedo, como método de entregas de nuestras evaluaciones.
 
 # Swag Vynil - Tienda Online & Panel de Administración
 
