@@ -22,7 +22,7 @@ function Navbar() {
                             <Link className="nav-link" to="/login">Iniciar Sesión</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/register">Registrarse</Link>
+                            <Link className="nav-link" to="/registro">Registrarse</Link>
                         </li>
                     </ul>
                 </div>

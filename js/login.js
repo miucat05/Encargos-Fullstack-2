@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
             mostrarError(inputContrasena, errorContrasena, "La contraseña es obligatoria.");
             return false;
         }
-        if (valor.length < 4 || valor.length > 10) {
+        if (valor.length < 4 || valor.length > 10 ) {
             mostrarError(inputContrasena, errorContrasena, "La contraseña debe tener entre 4 y 10 caracteres.");
             return false;
         }

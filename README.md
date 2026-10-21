@@ -67,3 +67,24 @@ Aplicación web e-commerce enfocada en la venta de discos de vinilo, desarrollad
 ├── admin-producto-form.html     # Formulario de alta/edición de producto
 ├── admin-usuarios.html           # Tabla de gestión de usuarios
 └── admin-usuario-form.html      # Formulario de alta/edición de usuario
+
+  if (!/[0,9]/.test(valor)){
+      mostrarError(inputContrasena, errorContrasena, "La contraseña debe tener al menos un numero.")
+      return false;
+    }
+    if (!/[A-Z]/.test(valor)){
+      mostrarError(inputContrasena, errorContrasena, "La contraseña debe tener al menos una mayuscula.")
+      return false;
+    }
+    if (!/[!@%&$#?¿]/.test(valor)){
+      mostrarError(inputContrasena, errorContrasena, "La contraseña debe tener al menos un simbolo expecial (!,@,%,&,$,#,?,¿).")
+      return false;
+    }
+    if (!/[a-z]/.test(valor)){
+      mostrarError(inputContrasena, errorContrasena, "La contraseña debe tener una letra minuscula")
+      return false;
+    }
+    if (!/[a-z]/.test(valor)){
+        mostrarError(inputContrasena, errorContrasena, "La contraseña debe tener una letra minuscula
+        return false)
+    }
